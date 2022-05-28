@@ -18,5 +18,13 @@ contract Gas_Test{
             totalFunds = totalFunds + arrayFunds[i];
         }
     }
+
+    function optionB() external {
+        uint _totalFunds;
+        for (uint i = 0; i < arrayFunds.length; i++) {
+            _totalFunds = _totalFunds + arrayFunds[i];
+        }
+        totalFunds = _totalFunds;
+    }
     
 }
